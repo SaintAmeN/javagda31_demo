@@ -1,10 +1,7 @@
 package com.javagda34;
 
 import javax.swing.text.html.Option;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
-import java.util.Optional;
+import java.util.*;
 import java.util.function.Predicate;
 
 public class Main {
@@ -27,6 +24,21 @@ public class Main {
 //                return false;
 //            }
 //        })
+
+        Deque<String> queue = new LinkedList<>();
+        // FIFO - Queue
+        // LIFO - Stack
+
+        // Comparable
+        // Comparator
+        List<Student> students = new ArrayList<>();
+        Collections.sort(students, new Comparator<Student>() {
+            @Override
+            public int compare(Student student, Student t1) {
+                return student.getSurname().compareTo(t1.getSurname());
+            }
+        });
+
     }
 
     public static Optional<Integer> metoda(Integer... zmienna){

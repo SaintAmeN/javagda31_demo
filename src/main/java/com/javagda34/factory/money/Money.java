@@ -28,4 +28,9 @@ public class Money {
     public static Money create10PLN(){
         return new Money(10.0, "PLN");
     }
+
+    public static class Obiekty{
+        public Obiekty() {
+        }
+    }
 }
